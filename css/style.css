@@ -451,7 +451,7 @@ header.sticky {
     height: auto;
     width: 100%;
     border-radius: 22px;
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.5rem;
 }
 
 .row{
@@ -515,6 +515,12 @@ header.sticky {
     padding: 5px;
     text-align: justify;
 
+}
+.small-logos img{
+    width: auto;
+    height: 30px;
+    margin: 0 5px;
+    border-radius:0;
 }
 
 .row h5{
