@@ -645,7 +645,27 @@ form .send-btn:hover{
     font-size: 27px;
 }
 
+@media (max-width: 2000px){
+    .portafolio-center{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(550px,auto));
+        align-items: center;
+        gap: 2.3rem;
+        margin-top: 4.2rem;
+    }
+}
+
 @media (max-width: 1700px){
+    .portafolio-center{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px,auto));
+        align-items: center;
+        gap: 2.3rem;
+        margin-top: 4.2rem;
+    }
+    /* .description-portafolio p{
+        font-size: 16px;
+    } */
     header{
         padding: 20px 8%;
     }
@@ -737,6 +757,9 @@ form .send-btn:hover{
     .top-btn{
         display: none;
     }
+    .description-portafolio p{
+        font-size: 18px;
+    }
     .navlist {
         height: 100vh;
         position: fixed;
@@ -773,6 +796,9 @@ form .send-btn:hover{
     .hero p{
         text-align: justify;
     }
+    .description-portafolio p{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 539px){
@@ -790,6 +816,9 @@ form .send-btn:hover{
     :root{
         --h1-font:2.5rem;
         --h2-font: 2rem;
+    }
+    .description-portafolio p{
+        font-size: 12px;
     }
 
     .about, .portafolio, .contact{
