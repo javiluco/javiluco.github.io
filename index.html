@@ -49,6 +49,9 @@
     <!-- EMAIL JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -543,6 +546,25 @@
 
         </div>
     </section>
+    <!-- Certificados -->
+     <section class="certificates">
+        <div class="center-text" data-aos="fade-down">
+            <h2><span>Certificados</span></h2>
+        </div>
+        <br>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/certificates/React.png" alt="Certificado React"></div>
+              <div class="swiper-slide"><img src="assets/img/certificates/C_nextjs.png" alt="Certificado Nextjs"></div>
+              <div class="swiper-slide"><img src="assets/img/certificates/C_Angular.png" alt="Certificado Angular"></div>
+              <div class="swiper-slide"><img src="assets/img/certificates/JavaScript.png" alt="Certificado JavaScript"></div>
+              <div class="swiper-slide"><img src="assets/img/certificates/Node.png" alt="Certificado Nodejs"></div>
+              <div class="swiper-slide"><img src="assets/img/certificates/Scrum.png" alt="Certificado Scrum"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+     </section>
 
     <!-- Contact -->
     <section class="contact" id="contact">
@@ -632,6 +654,44 @@
         AOS.init({
             offset: 300,
             duration: 400,
+        });
+    </script>
+
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        zoom: true,
+        loop: true,
+        breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        }
         });
     </script>
 
